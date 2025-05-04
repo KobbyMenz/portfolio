@@ -415,6 +415,108 @@ mark,
   font-size: 90%;
   color: #6c757d; }
 
+  :root {
+    --primary: #0c007c;
+    --secondary: #007aba;
+  }
+  
+  
+  
+  /* From Uiverse.io by adeladel522 */
+  button {
+    position: relative;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    /* background: var(--primary); */
+    color: #ffff;
+    cursor: pointer;
+    /* border: none; */
+    border-radius: 2rem;
+    font-weight: inherit;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    gap: 1rem;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* button:active {
+    transform: scale(0.95);
+  } */
+  
+  button:hover {
+    transform: scale(1.04);
+    border-color: #fff9;
+    /* background: var(--secondary); */
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  /* .button:hover .button svg {
+    transform: translate(-0.4rem);
+  } */
+  
+  button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+   
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -10rem;
+    opacity: 0.6;
+   
+  }
+  
+  button:active {
+    /* background-color: var(--secondary); */
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    /* box-shadow: none; */
+    transform: scale(0.98);
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -10rem;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+  /* .button:hover {
+    background: var(--secondary);
+  } */
+  
+
 code {
   font-size: 87.5%;
   color: #e83e8c;
